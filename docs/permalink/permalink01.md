@@ -1,8 +1,12 @@
 ---
 next:
   text: permalink02
-  link: /permalink/02a01f
+  link: /permalink/396af8
 title: 测试1
+permalink: /permalink/bbc94c
+---
+
+: 测试1
 permalink: /permalink/90be06
 ---
 

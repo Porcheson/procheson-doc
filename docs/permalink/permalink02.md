@@ -1,8 +1,12 @@
 ---
 prev:
   text: permalink01
-  link: /permalink/e516f1
+  link: /permalink/974593
 title: 测试2
+permalink: /permalink/0af896
+---
+
+: 测试2
 permalink: /permalink/19e278
 ---
 
