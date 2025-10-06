@@ -8,10 +8,12 @@ import { MermaidMarkdown, MermaidPlugin } from 'vitepress-plugin-mermaid';
 import { usePosts } from './theme/untils/permalink';
 const { rewrites } = await usePosts();
 
+// 添加ST语言别名为txt以解决语法高亮问题
+
 export default defineConfig({
   lang: 'zh-CN',
   title: "Procheson PLC测试报告",
-  description: "Procheson PLC指令测试报告平台",
+  description: "Procheson PLC指令测试报告",
   rewrites,
 
   // #region fav
@@ -114,6 +116,11 @@ export default defineConfig({
         md.renderer.rules.fence = (tokens, idx, options, env, self) => {
           const token = tokens[idx];
           const info = token.info.trim();
+
+          // 将st语言别名为txt以获得基本语法高亮
+          if (info === 'st') {
+            token.info = 'txt';
+          }
 
           // 判断是否为 md:img 类型的代码块
           if (info.includes('md:img')) {
