@@ -14,39 +14,6 @@ Procheson PLC结构化文本指令测试报告平台
 - **易用性**：提供完整的测试程序和详细文档
 - **可扩展性**：建立模块化测试框架，便于后续扩展
 
-## 技术栈
-
-- [VitePress](https://vitepress.dev/) - 现代静态站点生成器
-- Markdown - 文档编写
-- PLC ST (结构化文本) - 测试程序开发
-
-## 快速开始
-
-### 本地开发
-
-```bash
-# 克隆项目
-git clone https://github.com/wuhanheibao01/procheson-doc.git
-
-# 进入项目目录
-cd procheson-doc
-
-# 安装依赖
-pnpm install
-
-# 启动开发服务器
-pnpm run docs:dev
-```
-
-### 构建部署
-
-```bash
-# 构建静态站点
-pnpm run docs:build
-
-# 预览构建结果
-pnpm run docs:preview
-```
 
 ## 项目结构
 
@@ -59,9 +26,6 @@ pnpm run docs:preview
 └── package.json           # 项目配置
 ```
 
-## 部署
-
-项目通过GitHub Actions自动部署到GitHub Pages。每次推送到`main`分支都会触发自动构建和部署。
 
 ## 联系方式
 
