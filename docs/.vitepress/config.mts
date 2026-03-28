@@ -22,7 +22,7 @@ export default defineConfig({
   ],
   // #endregion fav
 
-  base: '/luban-plc-tests/', //网站部署到github的luban-plc-tests仓库
+  base: '/', //网站部署到根路径（Netlify）
 
   // cleanUrls:true, //开启纯净链接无html
 
